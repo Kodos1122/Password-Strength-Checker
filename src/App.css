@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #30085b;
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.password-container {
+  margin: auto;
+  width: 50%;
+}
+
+.password-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.view-password-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #717171;
+}
