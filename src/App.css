@@ -35,7 +35,7 @@
 }
 
 .nextButton {
-  background-color: #30085b; /* Green */
+  background-color: #30085b;
   border-radius: 5px;
   border: none;
   color: white;
@@ -47,9 +47,12 @@
 }
 
 .appFooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   background-color: #30085b;
   color: white;
-  padding: 20px 0;
-  margin-top: 20px;
+  height: 7%;
   width: 100%;
+  
 }

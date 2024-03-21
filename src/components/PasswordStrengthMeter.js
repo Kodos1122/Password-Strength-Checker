@@ -7,7 +7,7 @@ const PasswordStrengthMeter = ({ password }) => {
 
   const hasUpperCase = /[A-Z]/.test(password);
   const hasNumber = /\d/.test(password);
-  const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+  const hasSpecialChar = /[!@#$%^&*()',.?":{}|<>]/.test(password);
 
   const createPassLabel = () => {
     switch (testResult.score) {

@@ -1,6 +1,10 @@
+import React from 'react';
 import { useState } from 'react';
 import PasswordStrengthMeter from './components/PasswordStrengthMeter';
 import './App.css'; // Assuming your styles are in App.css
+
+import { Link } from "react-router-dom";
+
 
 function App() {
   const [password, setPassword] = useState('');
@@ -30,15 +34,15 @@ function App() {
         <PasswordStrengthMeter password={password} />
       </div>
       <div>
-        <h4 className='nextButton'>Next</h4>
-        <footer className='appFooter'>
-          
-        </footer>
+        <Link to="/tester">
+          <button className='nextButton'>
+            Next
+          </button>
+        </Link>
+        <footer className='appFooter' />
       </div>
     </div>
   );
-}
+};
 
 export default App;
-
-
