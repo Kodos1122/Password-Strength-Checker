@@ -33,3 +33,23 @@
   cursor: pointer;
   color: #717171;
 }
+
+.nextButton {
+  background-color: #30085b; /* Green */
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.appFooter {
+  background-color: #30085b;
+  color: white;
+  padding: 20px 0;
+  margin-top: 20px;
+  width: 100%;
+}

@@ -29,6 +29,12 @@ function App() {
         </div>
         <PasswordStrengthMeter password={password} />
       </div>
+      <div>
+        <h4 className='nextButton'>Next</h4>
+        <footer className='appFooter'>
+          
+        </footer>
+      </div>
     </div>
   );
 }
