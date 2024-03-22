@@ -51,7 +51,17 @@
   display: inline-block;
   font-size: 16px;
 }
-
+.previousButton {
+  background-color: #30085b;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 .appFooter {
   position: fixed;
   bottom: 0;

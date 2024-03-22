@@ -34,6 +34,13 @@ function App() {
         <PasswordStrengthMeter password={password} />
       </div>
       <div>
+      <Link to="/cracker">
+          <button className='previousButton'>
+            Cracker
+          </button>
+        </Link>
+      </div>
+      <div>
         <Link to="/tester">
           <button className='nextButton'>
             Next
