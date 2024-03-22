@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  width: 100%;
+  
 }
 
 .App-header {
@@ -8,6 +9,7 @@
   padding: 20px 0;
   margin-bottom: 20px;
   width: 100%;
+  text-align: center;
 }
 
 .password-container {
@@ -23,6 +25,10 @@
 
 .password-input-container {
   position: relative;
+}
+
+.password-requirements {
+  text-align: center;
 }
 
 .view-password-icon {
@@ -55,4 +61,16 @@
   height: 7%;
   width: 100%;
   
+}
+
+.testerTable {
+  margin: auto;
+  width: 50%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  outline:auto;
+}
+
+.testerTableCell {
+  border: 1px solid;
 }

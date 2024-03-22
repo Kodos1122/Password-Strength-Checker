@@ -54,7 +54,7 @@ const PasswordStrengthMeter = ({ password }) => {
       <div className="progress" style={{ height: '7px' }}>
         <div className="progress-bar" style={changePasswordColor()}></div>
       </div>
-      <p style={{ color: funcProgressColor() }}>{createPassLabel()}</p>
+      <p style={{ color: funcProgressColor() }} className="password-requirements">{createPassLabel()}</p>
       <div className="password-requirements">
         <p style={{ color: hasUpperCase ? 'green' : 'red' }}>
           {hasUpperCase ? '✔' : '✖'} Must include an uppercase letter

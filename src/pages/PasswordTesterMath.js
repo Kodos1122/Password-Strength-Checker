@@ -14,29 +14,30 @@ const PasswordTesterMath = () => {
                 <h1>How Secure is Your Password?</h1>
                 <p>Check how strong is your password with our password strength checker.</p>
             </header>
-                <div className="password-container">
-                    <div className="password-input-container">
-                        <input
-                            type={isPasswordVisible ? 'text' : 'password'}
-                            className="password-input"
-                            placeholder="Password"
-                            onChange={e => setPassword(e.target.value)}
-                            value={password}
-                        />
-                        <i
-                            className={`view-password-icon ${isPasswordVisible ? 'fas fa-eye-slash' : 'fas fa-eye'}`}
-                            onMouseEnter={() => setIsPasswordVisible(true)}
-                            onMouseLeave={() => setIsPasswordVisible(false)}
-                        ></i>
-                    </div>
-                    <TesterMath password={password} />
+            <div className="password-container">
+                <div className="password-input-container">
+                    <input
+                        type={isPasswordVisible ? 'text' : 'password'}
+                        className="password-input"
+                        placeholder="Password"
+                        onChange={e => setPassword(e.target.value)}
+                        value={password}
+                    />
+                    <i
+                        className={`view-password-icon ${isPasswordVisible ? 'fas fa-eye-slash' : 'fas fa-eye'}`}
+                        onMouseEnter={() => setIsPasswordVisible(true)}
+                        onMouseLeave={() => setIsPasswordVisible(false)}
+                    ></i>
                 </div>
-            <Link to="/">
-                <button className="nextButton">
-                    Go Back
-                </button>
-            </Link>
-
+            </div>
+            <div className="password-requirements">
+                <TesterMath password={password} />
+                <Link to="/">
+                    <button className="nextButton">
+                        Go Back
+                    </button>
+                </Link>
+            </div>
 
             <footer className="appFooter"></footer>
         </div>
