@@ -84,3 +84,22 @@
 .testerTableCell {
   border: 1px solid;
 }
+
+.progress-container {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.progress-bar {
+  height: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  transition: width 0.3s ease-in-out; /* Smooth transition for width change */
+}
+
+.progress-text {
+  display: block;
+}
