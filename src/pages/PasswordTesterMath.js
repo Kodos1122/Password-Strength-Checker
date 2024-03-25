@@ -12,7 +12,7 @@ const PasswordTesterMath = () => {
         <div className="App">
             <header className="App-header">
                 <h1>How Secure is Your Password?</h1>
-                <p>Check how strong is your password with our password strength checker.</p>
+                <p>Check your password strength</p>
             </header>
             <div className="password-container">
                 <div className="password-input-container">
@@ -34,7 +34,7 @@ const PasswordTesterMath = () => {
                 <TesterMath password={password} />
                 <Link to="/">
                     <button className="nextButton">
-                        Go Back
+                        Back
                     </button>
                 </Link>
             </div>

@@ -214,21 +214,18 @@ const TesterMath = ({ password }) => {
             uppercase_characters_bonus()+
             lowercase_characters_bonus()+
             num_numbers_bonus()+
-            num_symbols_bonus()-
+            num_symbols_bonus()+
             //Deductions
-            letters_only_deduction()-
-            numbers_only_deduction()-
-            consecutive_lowercase_bonus()-
-            consecutive_uppercase_bonus()-
-            consecutive_numbers_bonus()-
-            sequential_letters_bonus()-
-            sequential_numbers_bonus()-
+            letters_only_deduction()+
+            numbers_only_deduction()+
+            consecutive_lowercase_bonus()+
+            consecutive_uppercase_bonus()+
+            consecutive_numbers_bonus()+
+            sequential_letters_bonus()+
+            sequential_numbers_bonus()+
             sequential_symbols_bonus()
         );
 
-        if (score >= 100) {
-            return 100;
-        }
         return score; 
     }
 
@@ -238,6 +235,8 @@ const TesterMath = ({ password }) => {
             return 100;
         } else if (progressScore<=0) {
             return 0;
+        } else {
+            return progressScore;
         }
     }
 
@@ -251,7 +250,7 @@ const TesterMath = ({ password }) => {
                     <td className="testerTableCell">{getScore()}</td>
                 </tr>
                 <tr>
-                    <ProgressBar progress={getScore()}/>
+                    <ProgressBar progress={getProgressScore()}/>
                 </tr>
             </table>
             <table className="testerTable">

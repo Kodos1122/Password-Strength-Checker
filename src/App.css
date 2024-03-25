@@ -1,15 +1,15 @@
 .App {
   width: 100%;
-  
 }
 
 .App-header {
-  background-color: #30085b;
+  background-image: linear-gradient(to left, #21063d, #560da5 50%, #30085b);
   color: white;
   padding: 20px 0;
   margin-bottom: 20px;
   width: 100%;
   text-align: center;
+  
 }
 
 .password-container {
@@ -41,7 +41,7 @@
 }
 
 .nextButton {
-  background-color: #30085b;
+  background-color: #560da5;
   border-radius: 5px;
   border: none;
   color: white;
@@ -51,8 +51,9 @@
   display: inline-block;
   font-size: 16px;
 }
+
 .previousButton {
-  background-color: #30085b;
+  background-image: linear-gradient(to left, #21063d, #560da5 50%, #30085b);
   border-radius: 5px;
   border: none;
   color: white;
@@ -66,7 +67,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #30085b;
+  background-image: linear-gradient(to left, #21063d, #560da5 50%, #30085b);
   color: white;
   height: 7%;
   width: 100%;
@@ -83,6 +84,13 @@
 
 .testerTableCell {
   border: 1px solid;
+  text-align: left;
+  padding: 10px;
+}
+
+.testerTableHeader {
+  border: 1px solid;
+  padding: 10px;
 }
 
 .progress-container {
@@ -102,4 +110,33 @@
 
 .progress-text {
   display: block;
+}
+
+.buttonTable {
+  margin: auto;
+  width: 20%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.subtitleText {
+  background-image: linear-gradient(to left, #21063d, #560da5 50%, #30085b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.bodyContainer {
+  margin: auto;
+  width: 50%;
+  margin-top: 1%;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.bodyContainer2 {
+  margin-bottom: 100px;
 }

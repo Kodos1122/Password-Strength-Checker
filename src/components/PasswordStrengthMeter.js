@@ -7,7 +7,7 @@ const PasswordStrengthMeter = ({ password }) => {
 
   const hasUpperCase = /[A-Z]/.test(password);
   const hasNumber = /\d/.test(password);
-  const hasSpecialChar = /[!@#$%^&*()',.?":{}|<>]/.test(password);
+  const hasSpecialChar = /[!@#$%^&*()'\[\],.?":{}|<>]/.test(password);
 
   const createPassLabel = () => {
     switch (testResult.score) {
@@ -54,8 +54,8 @@ const PasswordStrengthMeter = ({ password }) => {
       <div className="progress" style={{ height: '7px' }}>
         <div className="progress-bar" style={changePasswordColor()}></div>
       </div>
-      <p style={{ color: funcProgressColor() }} className="password-requirements">{createPassLabel()}</p>
-      <div className="password-requirements">
+      <p style={{ color: funcProgressColor() }}>{createPassLabel()}</p>
+      <div>
         <p style={{ color: hasUpperCase ? 'green' : 'red' }}>
           {hasUpperCase ? '✔' : '✖'} Must include an uppercase letter
         </p>
